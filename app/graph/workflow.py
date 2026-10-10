@@ -1,8 +1,11 @@
 from typing import TypedDict
-from langgraph.graph import StateGraph, START, END
+
+from langgraph.graph import END, START, StateGraph
+
 from app.core.config import get_settings
 from app.services.llm import generate_answer
 from app.services.vector_store import search
+
 
 class RAGState(TypedDict, total=False):
     tenant_id: str

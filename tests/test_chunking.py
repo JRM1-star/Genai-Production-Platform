@@ -1,5 +1,6 @@
 from app.services.ingestion import chunk_text, sha256_bytes
 
+
 def test_chunking_has_overlap_and_content():
     text = "word " * 1000
     chunks = chunk_text(text)

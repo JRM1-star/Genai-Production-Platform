@@ -1,6 +1,8 @@
 import pytest
 from pydantic import ValidationError
+
 from app.domain.schemas import ChatRequest
+
 
 def test_question_validation():
     assert ChatRequest(question="What is this?").question

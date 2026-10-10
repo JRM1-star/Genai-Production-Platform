@@ -1,6 +1,7 @@
 import hashlib
 import io
 from pathlib import Path
+
 from pypdf import PdfReader
 
 ALLOWED_TYPES = {"application/pdf", "text/plain", "text/markdown"}

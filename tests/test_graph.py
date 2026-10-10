@@ -1,5 +1,6 @@
 from app.graph.workflow import evaluate_node, route_after_evaluation
 
+
 def test_insufficient_evidence():
     state = {"evidence": []}
     result = evaluate_node(state)

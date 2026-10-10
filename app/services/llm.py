@@ -1,6 +1,8 @@
 from functools import lru_cache
+
 from langchain_groq import ChatGroq
 from tenacity import retry, stop_after_attempt, wait_exponential
+
 from app.core.config import get_settings
 
 SYSTEM_PROMPT = (

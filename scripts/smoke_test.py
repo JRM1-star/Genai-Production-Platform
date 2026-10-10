@@ -1,4 +1,5 @@
 import os
+
 import httpx
 
 base = os.getenv("BASE_URL", "http://localhost:8000")

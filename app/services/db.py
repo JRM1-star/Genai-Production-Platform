@@ -1,8 +1,11 @@
-from datetime import datetime, timezone
+from datetime import UTC, datetime
+
 from sqlalchemy import DateTime, Integer, String, select
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
+
 from app.core.config import get_settings
+
 
 class Base(DeclarativeBase):
     pass
@@ -17,7 +20,7 @@ class Document(Base):
     sha256: Mapped[str] = mapped_column(String(64))
     chunk_count: Mapped[int] = mapped_column(Integer, default=0)
     created_at: Mapped[datetime] = mapped_column(
-        DateTime(timezone=True), default=lambda: datetime.now(timezone.utc)
+        DateTime(timezone=True), default=lambda: datetime.now(UTC)
     )
 
 settings = get_settings()

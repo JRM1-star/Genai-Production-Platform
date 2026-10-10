@@ -1,5 +1,7 @@
 from fastapi import Header, HTTPException, status
+
 from app.core.config import get_settings
+
 
 async def authenticate(
     x_api_key: str = Header(default=""),

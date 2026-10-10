@@ -1,19 +1,23 @@
+# API
 fastapi>=0.118,<1
 uvicorn[standard]>=0.37,<1
 pydantic>=2.11,<3
 pydantic-settings>=2.10,<3
 python-multipart>=0.0.20,<1
+
+# Agentic RAG and LLM
 langgraph>=1,<2
+langchain-core
+langchain-groq
 qdrant-client[fastembed]>=1.15,<2
 pypdf>=6,<7
+tenacity>=9,<10
+
+# Database and migrations
 sqlalchemy[asyncio]>=2.0.43,<3
 asyncpg>=0.30,<1
 alembic>=1.16,<2
-tenacity>=9,<10
+
+# Logging and HTTP
 structlog>=25,<26
 httpx>=0.28,<1
-pytest>=8,<9
-pytest-asyncio>=1,<2
-ruff>=0.13,<1
-langchain-groq
-langchain-core

@@ -1,6 +1,9 @@
 from functools import lru_cache
+
 from fastembed import TextEmbedding
+
 from app.core.config import get_settings
+
 
 @lru_cache
 def get_embedding_model() -> TextEmbedding:
