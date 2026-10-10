@@ -2,6 +2,9 @@
 
 ### Multi-Tenant Agentic RAG API
 
+![CI](https://github.com/JRM1-star/Genai-Production-Platform/actions/workflows/ci.yml/badge.svg)
+
+
 A Generative AI platform that allows users to upload PDF documents and ask questions about their contents using Retrieval-Augmented Generation (RAG).
 
 The platform combines semantic search, vector embeddings, document retrieval, and LLM-powered answering to generate context-aware responses with source attribution.
