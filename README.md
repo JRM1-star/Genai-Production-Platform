@@ -184,8 +184,8 @@ genai-production-platform/
 ### 1. Clone the Repository
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
-cd genai-production-platform
+git clone https://github.com/JRM1-star/Genai-Production-Platform.git 
+cd Genai-Production-Platform
 ```
 
 ### 2. Configure Environment Variables
