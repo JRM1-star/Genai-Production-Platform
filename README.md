@@ -556,7 +556,4 @@ This project demonstrates practical experience with:
 This project is licensed under the terms specified in the [`LICENSE`](LICENSE) file. See that file for details.
 
 ---
-
 **GenAI Production Platform — A Generative AI engineering project focused on document intelligence, Retrieval-Augmented Generation, and multi-tenant API design.**
-
-````
